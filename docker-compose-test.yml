@@ -30,7 +30,7 @@ services:
 
 networks:
   default:
-    name: nestjs_starter_test
+    name: nestjs_real_estate_test
 
 volumes:
   nestjs_postgres_test:
