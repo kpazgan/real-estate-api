@@ -1,0 +1,25 @@
+meta {
+  name: Create Listing
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/listing
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "label": "Spacious Apartment in Downtown",
+    "addressLine1": "123 Main St",
+    "addressLine2": "Apt 4B",
+    "addressCity": "Springfield",
+    "addressZipcode": "62704",
+    "price": 150000,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "squareMeters": 120
+  }
+}
