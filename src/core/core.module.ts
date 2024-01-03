@@ -15,6 +15,7 @@ import { LoggerService } from './logger/logger.service';
 import { LoggerMiddleware } from './logger/logger.middleware';
 import { DatabaseModule } from '../database/database.module';
 import { CacheService } from './cache/cache.service';
+import { QueueModule } from './queue/queue.module';
 
 @Global()
 @Module({
@@ -42,6 +43,7 @@ import { CacheService } from './cache/cache.service';
       },
       inject: [ConfigService],
     }),
+    QueueModule,
   ],
   providers: [
     {
