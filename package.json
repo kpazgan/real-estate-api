@@ -29,6 +29,9 @@
     "db:studio": "npx prisma studio"
   },
   "dependencies": {
+    "@bull-board/api": "^5.10.3",
+    "@bull-board/express": "^5.10.3",
+    "@bull-board/nestjs": "^5.10.3",
     "@nestjs/bull": "^10.0.1",
     "@nestjs/cache-manager": "^2.1.1",
     "@nestjs/common": "^10.0.0",
