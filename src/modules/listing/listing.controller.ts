@@ -32,7 +32,6 @@ export class ListingController {
     )
     files: Express.Multer.File[],
   ) {
-    console.log(`files:`, files);
     return this.listingService.create({
       data: createListingDto,
       images: files,
